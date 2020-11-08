@@ -14,7 +14,8 @@ em,h1
 {
 	color: rgb(255, 0, 228);
 }
-/*img
+#img_mort-visage-gros-plan-halloween
 {
-	size: 
-}*/
+	max-height: 25%;
+	max-width: 25%;
+}
