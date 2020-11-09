@@ -10,12 +10,75 @@ em,h1
 {
 	color: rgb(128,255,0);
 }
-.exeption1
+.exeption1 /*class*/
 {
 	color: rgb(255, 0, 228);
 }
-#img_mort-visage-gros-plan-halloween
+#img_mort-visage-gros-plan-halloween /*id*/
 {
 	max-height: 25%;
 	max-width: 25%;
+}
+
+*/*ballise universel (prendt toutes les balise sans exeption)*/
+{
+	font-family: Comic Sans MS, Comic Sans, cursive, sans-serif;
+}
+
+figure p
+{
+	font-style: italic;
+}
+
+/*==============a trouver le bon fichier ===========================
+@font-face
+{
+	font-family: 'RUST';
+	src: url('../polices/My_Fontspring_Fonts_Order_59328258.eot');
+}
+*/
+
+.blink
+{
+    text-decoration: blink;
+}
+.souligne
+{
+    text-decoration: underline;
+}
+.barre
+{
+    text-decoration: line-through;
+}
+.ligne_dessus
+{
+    text-decoration: overline;
+}
+
+/*text-align ne fonctionne qu'avec des balise de type block (p, div, h1,...)*/
+.centre
+{
+	text-align: center;
+}
+
+.left
+{
+	text-align: left;
+}
+
+.right
+{
+	text-align: right;
+}
+
+.justify
+{
+	text-align: justify;
+}
+
+.imgflottante
+{
+	height: 100px;
+	width: 100px;
+	float: left;
 }
