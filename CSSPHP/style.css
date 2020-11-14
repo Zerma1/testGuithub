@@ -1,19 +1,42 @@
-p
+.texte_bleux
 {
 	color: rgb(0,0,255);/*bleu*/
 }
+
 blouje
 {
 	color: rgb(200,0,0);/*rouge*/
 }
-em,h1
+
+em /* les balise em et h1 on la meme mise en forme*/
 {
 	color: rgb(128,255,0);
 }
+/*h3 em /*les balise em situer a l'interieur d'une balise h3*//*
+{
+
+}*/
+
+/*h3 + p /*Sélectionne la première balise <p>  située après un titre <h3>*//*
+{
+
+}*/
+
+/*a[title] /*Sélectionne tous les liens <a> qui possèdent un attribut title. si il y as [title="Cliquez ici"] l'attribut doit cette fois contenir dans sa valeur ce qu'il y as apres le =*//*
+{
+
+}*/
+
 .exeption1 /*class*/
 {
-	color: rgb(255, 0, 228);
+	color: #FF00E4;/*couleur en hexa decimal*/
 }
+
+.noir
+{
+	color: #000000;
+}
+
 #img_mort-visage-gros-plan-halloween /*id*/
 {
 	max-height: 25%;
@@ -82,3 +105,26 @@ figure p
 	width: 100px;
 	float: left;
 }
+
+/*==============back gound==============*/
+	.magenta
+	{
+		background: #66005C;
+	}
+	.black
+	{
+		background: #000000;
+		color: white;
+	}
+
+	.image
+	{
+		background-image: url(../images/mort-visage-gros-plan-halloween.jpg);
+		background-attachment: fixed;/*l'inmage ne bouge pas*/
+		/*background-repeat: no-repeat; /*l'image ne se repete pas*/
+		/*
+			repeat-x  : le fond sera répété uniquement sur la première ligne, horizontalement
+			repeat-y  : le fond sera répété uniquement sur la première colonne, verticalement
+		*/
+		color: #7F7F7F
+	}
