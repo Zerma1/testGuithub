@@ -1,110 +1,100 @@
-.texte_bleux
-{
-	color: rgb(0,0,255);/*bleu*/
-}
+/*pas operationnel
+	/*==============a trouver le bon fichier ===========================
+		@font-face
+		{
+			font-family: 'RUST';
+			src: url('../polices/My_Fontspring_Fonts_Order_59328258.eot');
+		}
+		*/
+	/*h3 em /*les balise em situer a l'interieur d'une balise h3*//*
+	{
 
-blouje
-{
-	color: rgb(200,0,0);/*rouge*/
-}
+	}*/
 
-em /* les balise em et h1 on la meme mise en forme*/
-{
-	color: rgb(128,255,0);
-}
-/*h3 em /*les balise em situer a l'interieur d'une balise h3*//*
-{
+	/*h3 + p /*Sélectionne la première balise <p>  située après un titre <h3>*//*
+	{
 
-}*/
+	}*/
 
-/*h3 + p /*Sélectionne la première balise <p>  située après un titre <h3>*//*
-{
+	/*a[title] /*Sélectionne tous les liens <a> qui possèdent un attribut title. si il y as [title="Cliquez ici"] l'attribut doit cette fois contenir dans sa valeur ce qu'il y as apres le =*//*
+	{
 
-}*/
-
-/*a[title] /*Sélectionne tous les liens <a> qui possèdent un attribut title. si il y as [title="Cliquez ici"] l'attribut doit cette fois contenir dans sa valeur ce qu'il y as apres le =*//*
-{
-
-}*/
-
-.exeption1 /*class*/
-{
-	color: #FF00E4;/*couleur en hexa decimal*/
-}
-
-.noir
-{
-	color: #000000;
-}
-
-#img_mort-visage-gros-plan-halloween /*id*/
-{
-	max-height: 25%;
-	max-width: 25%;
-}
-
-*/*ballise universel (prendt toutes les balise sans exeption)*/
-{
-	font-family: Comic Sans MS, Comic Sans, cursive, sans-serif;
-}
-
-figure p
-{
-	font-style: italic;
-}
-
-/*==============a trouver le bon fichier ===========================
-@font-face
-{
-	font-family: 'RUST';
-	src: url('../polices/My_Fontspring_Fonts_Order_59328258.eot');
-}
-*/
-
-.blink
-{
-    text-decoration: blink;
-}
-.souligne
-{
-    text-decoration: underline;
-}
-.barre
-{
-    text-decoration: line-through;
-}
-.ligne_dessus
-{
-    text-decoration: overline;
-}
-
-/*text-align ne fonctionne qu'avec des balise de type block (p, div, h1,...)*/
-.centre
-{
-	text-align: center;
-}
-
-.left
-{
-	text-align: left;
-}
-
-.right
-{
-	text-align: right;
-}
-
-.justify
-{
-	text-align: justify;
-}
-
+	}*/
+	
 .imgflottante
 {
 	height: 100px;
 	width: 100px;
 	float: left;
 }
+/*==============decoration==============*/
+	/*==============text-decoration==============*/
+		.blink
+		{
+		    text-decoration: blink;
+		}
+
+		.souligne
+		{
+		    text-decoration: underline;
+		}
+
+		.barre
+		{
+		    text-decoration: line-through;
+		}
+
+		.ligne_dessus
+		{
+		    text-decoration: overline;
+		}
+
+	/*==============couleur texte==============*/
+		.texte_bleux
+		{
+			color: rgb(0,0,255);/*bleu*/
+		}
+
+		blouje
+		{
+			color: rgb(200,0,0);/*rouge*/
+		}
+
+		em /*h1/* les balise em et h1 on la meme mise en forme*/
+		{
+			color: rgb(128,255,0);
+		}
+		.exeption1 /*class*/
+		{
+			color: #FF00E4;/*couleur en hexa decimal*/
+		}
+
+		.noir
+		{
+			color: #000000;
+		}
+
+	/*==============aligmenet texte==============*/
+	/*text-align ne fonctionne qu'avec des balise de type block (p, div, h1,...)*/
+
+	.justify
+	{
+		text-align: justify;
+	}
+	.centre
+	{
+		text-align: center;
+	}
+
+	.left
+	{
+		text-align: left;
+	}
+
+	.right
+	{
+		text-align: right;
+	}
 
 /*==============back gound==============*/
 	.magenta
@@ -127,4 +117,44 @@ figure p
 			repeat-y  : le fond sera répété uniquement sur la première colonne, verticalement
 		*/
 		color: #7F7F7F
+	}
+/*==============lien==============*/
+	a/*lien par defaut*/
+	{
+		text-decoration: none;
+		color: #7F7F7F;
+	}
+
+	a:visited /* Quand le visiteur a déjà vu la page concernée */
+	{
+		text-decoration: none;
+		color: #FF0000;
+	}
+
+	a:focus /* Quand le visiteur sélectionne le lien */
+	{
+		background-color: #FFFFFF;
+	}
+
+	a:hover /*quand on survol le lien il est bon de le metre apres toute les modification de lien pour etre sur que sa prenne cette mise en forme*/
+	{
+		text-decoration: underline;
+		color: #00FFFF;
+	}
+
+/*============== #ID ==============*/
+	#img_mort-visage-gros-plan-halloween /*id*/
+	{
+		max-height: 25%;
+		max-width: 25%;
+	}
+/*============== autre ==============*/
+	*/*ballise universel (prendt toutes les balise sans exeption)*/
+	{
+		font-family: Comic Sans MS, Comic Sans, cursive, sans-serif;
+	}
+
+	figure p
+	{
+		font-style: italic;
 	}
